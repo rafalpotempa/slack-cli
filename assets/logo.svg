@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="127"
+   height="127"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="Slack_icon_2019.svg"
+   inkscape:export-filename="C:\Users\rafal\Desktop\slack.png"
+   inkscape:export-xdpi="1507.1"
+   inkscape:export-ydpi="1507.1"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath12191">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g12187"
+         id="use12193" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="4.0032266"
+     inkscape:cx="38.718768"
+     inkscape:cy="71.067673"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="bg">
+    <rect
+       style="fill:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round"
+       id="rect13973"
+       width="127.39723"
+       height="127.39723"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="fg">
+    <g
+       id="g12189"
+       clip-path="url(#clipPath12191)"
+       transform="matrix(0.3778533,0,0,0.3778533,85.626153,40.264071)">
+      <g
+         inkscape:label="Clip"
+         id="g12187">
+        <path
+           d="m 45.707364,71.548219 c 0,3.583253 -2.896054,6.479306 -6.479306,6.479306 -3.583253,0 -6.479307,-2.896053 -6.479307,-6.479306 0,-3.583253 2.896054,-6.479307 6.479307,-6.479307 h 6.479306 z m 3.239653,0 c 0,-3.583253 2.896054,-6.479307 6.479307,-6.479307 3.583253,0 6.479307,2.896054 6.479307,6.479307 v 16.198266 c 0,3.583253 -2.896054,6.479307 -6.479307,6.479307 -3.583253,0 -6.479307,-2.896054 -6.479307,-6.479307 z"
+           fill="#e01e5a"
+           id="path2"
+           style="stroke-width:0.490857" />
+        <path
+           d="m 55.426324,45.532821 c -3.583253,0 -6.479307,-2.896053 -6.479307,-6.479306 0,-3.583253 2.896054,-6.479307 6.479307,-6.479307 3.583253,0 6.479307,2.896054 6.479307,6.479307 v 6.479306 z m 0,3.288739 c 3.583253,0 6.479307,2.896054 6.479307,6.479307 0,3.583253 -2.896054,6.479306 -6.479307,6.479306 H 39.178972 c -3.583253,0 -6.479307,-2.896053 -6.479307,-6.479306 0,-3.583253 2.896054,-6.479307 6.479307,-6.479307 z"
+           fill="#36c5f0"
+           id="path4"
+           style="stroke-width:0.490857" />
+        <path
+           d="m 81.392636,55.300867 c 0,-3.583253 2.896054,-6.479307 6.479306,-6.479307 3.583253,0 6.479307,2.896054 6.479307,6.479307 0,3.583253 -2.896054,6.479306 -6.479307,6.479306 h -6.479306 z m -3.239653,0 c 0,3.583253 -2.896054,6.479306 -6.479307,6.479306 -3.583253,0 -6.479307,-2.896053 -6.479307,-6.479306 V 39.053515 c 0,-3.583253 2.896054,-6.479307 6.479307,-6.479307 3.583253,0 6.479307,2.896054 6.479307,6.479307 z"
+           fill="#2eb67d"
+           id="path6"
+           style="stroke-width:0.490857" />
+        <path
+           d="m 71.673676,81.267179 c 3.583253,0 6.479307,2.896053 6.479307,6.479306 0,3.583253 -2.896054,6.479307 -6.479307,6.479307 -3.583253,0 -6.479307,-2.896054 -6.479307,-6.479307 v -6.479306 z m 0,-3.239654 c -3.583253,0 -6.479307,-2.896053 -6.479307,-6.479306 0,-3.583253 2.896054,-6.479307 6.479307,-6.479307 h 16.247352 c 3.583253,0 6.479307,2.896054 6.479307,6.479307 0,3.583253 -2.896054,6.479306 -6.479307,6.479306 z"
+           fill="#ecb22e"
+           id="path8"
+           style="stroke-width:0.490857" />
+      </g>
+    </g>
+    <rect
+       style="fill:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:round"
+       id="rect12217"
+       width="12.038483"
+       height="24.979851"
+       x="82.641678"
+       y="51.458492" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24.0964px;line-height:1.25;font-family:'Meslo LG S for Powerline';-inkscape-font-specification:'Meslo LG S for Powerline Bold';fill:#ffffff;stroke-width:0.60241"
+       x="6.6487589"
+       y="72.82679"
+       id="text13313"><tspan
+         sodipodi:role="line"
+         id="tspan13311"
+         x="6.6487589"
+         y="72.82679"
+         style="stroke-width:0.60241">Slack</tspan></text>
+  </g>
+</svg>
