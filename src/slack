@@ -1,0 +1,25 @@
+#!python
+import argparse
+from pathlib import Path
+
+from src.main import main
+from src.cache import TOKEN_PATH_CACHE
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--token-path", type=str, required=False)
+    args, _ = parser.parse_known_args()            
+
+    if not args.token_path:
+        try: 
+            args.token_path = TOKEN_PATH_CACHE.read_text()
+        except FileNotFoundError:
+            print("Token path not cached. Please provide '--token-path' argument for initialization.")
+            exit(1)
+    else:
+        TOKEN_PATH_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        with TOKEN_PATH_CACHE.open("w") as file:
+            file.write(str(Path(args.token_path).expanduser()))
+
+    main(Path(args.token_path))

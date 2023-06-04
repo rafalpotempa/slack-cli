@@ -9,8 +9,9 @@ from typing import Dict, List
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
+from src.cache import MESSAGES_CACHE_PATH
+
 COLUMN_SEPARATOR = ",,,,,,,"
-MESSAGES_CACHE_PATH = Path(__file__).parent / ".cache"
 TIMESTAMP_FORMAT = "%Y-%m-%d %H:%M:%S"
 REFRESH_FREQUENCY_SECONDS = 5
 
@@ -96,14 +97,4 @@ def store_messages(channel_id: str, messages: List[MessageRow]):
     with open(MESSAGES_CACHE_PATH / channel_id, 'a') as file:
         file.writelines(m.to_write() for m in messages)
 
-
-def controlled_input():
-    data = input('Enter a value : ')
-    if data:
-        return data
-    else:
-        key=msvcrt.getch()
-        if(msvcrt.getch() == chr(27).encode()):
-            return
-    
         

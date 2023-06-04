@@ -3,13 +3,11 @@ from pathlib import Path
 from simple_term_menu import TerminalMenu
 
 from slack_sdk import WebClient
-from messages import build_get_conversation_messages, post_message
-
-USER_TOKEN_PATH = Path(__file__).parents[1] / ".token"
+from src.messages import build_get_conversation_messages, post_message
 
 
-def main():
-    client = WebClient(token=USER_TOKEN_PATH.read_text())
+def main(token_path: Path):
+    client = WebClient(token=token_path.read_text())
     conversations = client.conversations_list(types=['public_channel']).get("channels", [])  # ['public_channel', 'private_channel', 'mpim', 'im'] 
     name_id_mapping = {c.get("name"): c.get("id") for c in conversations}
 
@@ -46,7 +44,3 @@ def main():
                 if select is None:
                     back = True
 
-
-
-if __name__ == "__main__":
-    main()
