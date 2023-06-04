@@ -1,4 +1,5 @@
 import os
+import shutil
 
 import dataclasses
 from datetime import datetime
@@ -58,6 +59,22 @@ def build_get_conversation_messages(client: WebClient, mapping: Dict):
     return get_conversation_messages
 
 
+def post_message(client: WebClient, conversation_name: str, mapping: Dict):
+    prompt = f"Message to #{conversation_name}: "
+    try:
+        message = input(prompt)
+        print("\033[F" + " "*(len(prompt) + len(message)) + "\r", end="") 
+    except KeyboardInterrupt:
+        columns, lines = shutil.get_terminal_size()
+        print("\n\033[F" + " "*columns + "\r", end="")
+        return
+
+    try:
+        client.chat_postMessage(channel=mapping[conversation_name], text=message)
+    except SlackApiError as e:
+        print(f"Error: {e}")
+
+
 def fetch_messages(client: WebClient, args: Dict) -> List[MessageRow]:
     response = client.conversations_history(**args)
     return [MessageRow(float(m['ts']), m['user'], m['text']) for m in reversed(response.get("messages"))]
@@ -71,7 +88,6 @@ def get_messages_from_cache(channel_id: str, limit: int = 10) -> List[MessageRow
         return []
 
 
-
 def store_messages(channel_id: str, messages: List[MessageRow]):
     try:
         os.makedirs(MESSAGES_CACHE_PATH)
@@ -79,3 +95,15 @@ def store_messages(channel_id: str, messages: List[MessageRow]):
         pass
     with open(MESSAGES_CACHE_PATH / channel_id, 'a') as file:
         file.writelines(m.to_write() for m in messages)
+
+
+def controlled_input():
+    data = input('Enter a value : ')
+    if data:
+        return data
+    else:
+        key=msvcrt.getch()
+        if(msvcrt.getch() == chr(27).encode()):
+            return
+    
+        
