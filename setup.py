@@ -10,5 +10,6 @@ setup(
     author_email="rafal.potem@gmail.com",
     url="https://github.com/rafalpotempa/slack-cli",
     scripts=["src/slack"],
-    packages=["src"]
+    package_dir={"":"src"},
+    packages=[""],
 )
